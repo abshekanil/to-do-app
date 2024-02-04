@@ -1,0 +1,242 @@
+
+
+header{
+    background-color: #0D0D0D;
+    width: 1536px;
+    height: 170px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+      
+}
+
+body{
+    background-color: #191919;
+    padding: 0;
+    margin: 0;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.input-box>#taskInput{
+    width: 644px;
+    height: 54px;
+    font-size: 16px;
+    background-color: #262626;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    color: white;
+    margin-right: 15px;
+    margin-left: 10px;
+    
+}
+#taskDate{
+    width: 120px;
+    height:54px;
+    font-size: 16px;
+    background-color: #262626;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+    color:#808080;
+}
+
+input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    color:#808080;
+    padding-left: 1px;
+    
+}
+select{
+    border-radius: 10px;
+    background-color: #262626;
+    color:#808080; 
+    cursor: pointer;
+}
+
+.add-btn{
+    padding: 7px;
+    width: 75px;
+    height: 54px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #1a73e8;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 172px;
+    left: 910px;
+}
+
+.add-btn:hover{
+    opacity: 0.8;
+}
+
+.list-items{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-left: 25rem;
+}
+
+.highPriority-number{
+    width: 40px;
+    height:20px;
+    background-color: #333333;
+    color: white;
+    border-radius: 40px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    position: absolute;
+    right: 350px;
+}
+
+.list-items>p>span{
+    width: 30px;
+    height: 20px;
+    background-color:#333333;
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    right: 1030px;
+    text-align: center;
+}
+.numbers{
+    color: white;
+}
+
+.list-items>p{
+    color: #4EA8DE;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+
+.high-p-text{
+    color:#8284FA;
+    position: absolute;
+    right:390px; 
+    margin-right: 5px !important;   
+   
+}
+
+.to-do-box{
+    margin-left: 22.5rem;
+    margin-top: 1rem;
+    width: 810px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+
+ul li{
+    color: white;
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    background-color: #262626;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-image: url(./Vector\ \(2\).png);
+    background-size:cover ;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+ul li.checked::before{
+    background-image: url(./check.png)
+}
+
+ul li span{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+ul li span:hover{
+    background: #EDEEF0;
+}
+
+hr{
+    width: 80%;
+}
+
+.started{
+    display: flex;
+}
+.started>p{
+    color: #4ea8de;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+#highPro{
+margin-left: 39rem;
+}
+#start{
+    margin-left: 25rem;
+}
+.pronum{
+    color: white;
+    background-color:#555; 
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+#completed{
+    margin-left: 25rem;
+}
+
+#completeNum{
+    color: white;
+    background-color:#555; 
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
