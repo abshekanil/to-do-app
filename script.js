@@ -60,12 +60,10 @@ listContainer.addEventListener("click", function(e){
         e.target.parentNode.remove();
         count--
         countDisplay.innerHTML = count;
-        if(count > 0)
-        {
+        
             highPriorityCount--;
-            
-            
-        }
+               
+    
         completeCount--;
         completed.innerHTML = completeCount;
        
@@ -78,15 +76,14 @@ listContainer.addEventListener("click", function(e){
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
     localStorage.setItem("countNumber", count.toString());
-    localStorage.setItem("highPriority",highPriorityCount.toString());
+    
 }
 
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
     count = parseInt(localStorage.getItem("countNumber")) || 0;
     countDisplay.innerHTML = count;
-    highPriorityCount = parseInt(localStorage.getItem("highPriority")) || 0;
-    highPriorityDisplay.innerHTML = highPriorityCount + " of " + count;
+    
 
 }
 
